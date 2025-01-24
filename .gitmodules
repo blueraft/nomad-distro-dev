@@ -1,3 +1,21 @@
 [submodule "packages/nomad-FAIR"]
 	path = packages/nomad-FAIR
 	url = https://gitlab.mpcdf.mpg.de/nomad-lab/nomad-FAIR.git
+[submodule "packages/electronic-parsers"]
+	path = packages/electronic-parsers
+	url = git@github.com:nomad-coe/electronic-parsers.git
+[submodule "atomistic-parsers"]
+	path = atomistic-parsers
+	url = git@github.com:nomad-coe/atomistic-parsers.git
+[submodule "packages/workflow-parsers"]
+	path = packages/workflow-parsers
+	url = git@github.com:nomad-coe/workflow-parsers.git
+[submodule "packages/atomistic-parsers"]
+	path = packages/atomistic-parsers
+	url = git@github.com:nomad-coe/atomistic-parsers.git
+[submodule "packages/database-parsers"]
+	path = packages/database-parsers
+	url = git@github.com:nomad-coe/database-parsers.git
+[submodule "packages/nomad-plugins"]
+	path = packages/nomad-plugins
+	url = git@github.com:blueraft/nomad-plugins.git
