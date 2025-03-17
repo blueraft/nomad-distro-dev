@@ -19,3 +19,6 @@
 [submodule "packages/nomad-plugins"]
 	path = packages/nomad-plugins
 	url = git@github.com:blueraft/nomad-plugins.git
+[submodule "packages/nomad-measurements"]
+	path = packages/nomad-measurements
+	url = https://github.com/FAIRmat-NFDI/nomad-measurements.git
