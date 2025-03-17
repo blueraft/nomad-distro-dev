@@ -18,10 +18,18 @@ jobs:
         run: |
           git submodule init
           git submodule update --recursive --remote
-          git submodule foreach git switch develop
+
+      - name: Check for Changes
+        id: check-changes
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
 
       - name: Create Pull Request
-        if: steps.check-changes.outputs.changed == 'true'
+        if: ${{ steps.check-changes.outputs.changed == 'true' }}
         uses: peter-evans/create-pull-request@v5
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
